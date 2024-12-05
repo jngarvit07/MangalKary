@@ -1,0 +1,282 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ff6fa7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu ul li {
+    display: inline;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .menu ul li a:hover {
+    color: aliceblue;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://image.wedmegood.com/resized/1900X/uploads/city_bg_image/1/delhi_bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    /* Reduced padding for smaller gap */
+    color: white;
+    text-align: center;
+}
+
+.hero-section p {
+    font-size: 2rem;
+    margin-top: -20px;
+    /* Reduced top margin */
+    color: rgb(255, 255, 255);
+}
+
+.slide-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 3s ease-out forwards;
+}
+
+.slide-text:hover {
+    color: rgb(254, 7, 184);
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* General styling for services section */
+.services-section {
+    padding: 40px 0;
+    /* Reduced padding to reduce gap */
+    background-color: #f9f9f9;
+}
+
+/* Flex container for header with "Our Services" and "Explore More" */
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    /* Reduced margin bottom */
+}
+
+.services-header h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5c2e8b;
+    margin-bottom: 5px;
+    /* Reduced margin bottom */
+}
+
+.explore-more {
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.explore-more:hover {
+    color: #0056b3;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.service-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card .card-body {
+    padding: 15px;
+}
+
+.service-card .card-title {
+    font-size: 20px;
+    color: #5c2e8b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    /* Reduced padding */
+    text-align: center;
+    color: #333;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5c2e8b;
+    margin-bottom: 20px;
+    /* Reduced margin bottom */
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.testimonial-card strong {
+    font-size: 18px;
+    color: #5c2e8b;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar .menu ul {
+        gap: 15px;
+    }
+
+    .hero-section {
+        padding: 100px 20px;
+        /* Reduced padding for responsiveness */
+    }
+
+    .slide-text {
+        font-size: 3rem;
+    }
+
+    .services-header h2 {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-header {
+        padding: 0 10px;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+    }
+
+    .testimonials h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        /* Reduced margin bottom */
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.h2section {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Reduced margin bottom */
+}
