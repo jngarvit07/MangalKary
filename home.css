@@ -1,65 +1,41 @@
-/* General Reset */
 body {
-    margin: 0;
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #fdfdfd;
-    color: #333;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #ff6fa7;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .menu ul {
-    list-style: none;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 20px;
 }
 
-.navbar .menu ul li {
-    display: inline;
+.navbar {
+    background-color: #5c2e8b;
 }
 
-.navbar .menu ul li a {
-    text-decoration: none;
-    color: #fff;
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-link {
+    color: white !important;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-.navbar .menu ul li a:hover {
-    color: aliceblue;
+.nav-link:hover {
+    color: #ff6fa7 !important;
 }
 
-/* Hero Section */
-.hero-section {
+.hero {
+    position: relative;
+    height: 425px;
     background-image: url('https://image.wedmegood.com/resized/1900X/uploads/city_bg_image/1/delhi_bg.jpeg');
     background-size: cover;
     background-position: center;
-    padding: 120px 20px;
-    /* Reduced padding for smaller gap */
-    color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.hero-section p {
-    font-size: 2rem;
-    margin-top: -20px;
-    /* Reduced top margin */
-    color: rgb(255, 255, 255);
-}
-
-.slide-text {
-    font-size: 4rem;
+.hero h1 {
+    font-size: 3.5rem;
     font-weight: bold;
     color: aliceblue;
     text-align: center;
@@ -68,8 +44,8 @@ body {
     animation: slideIn 3s ease-out forwards;
 }
 
-.slide-text:hover {
-    color: rgb(254, 7, 184);
+.hero h1:hover {
+    color: #ff0909;
 }
 
 @keyframes slideIn {
@@ -84,203 +60,91 @@ body {
     }
 }
 
-/* General styling for services section */
-.services-section {
-    padding: 40px 0;
-    /* Reduced padding to reduce gap */
-    background-color: #f9f9f9;
+.services {
+    padding: 50px 0;
+    text-align: center;
 }
 
-/* Flex container for header with "Our Services" and "Explore More" */
-.services-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    margin-bottom: 10px;
-    /* Reduced margin bottom */
-}
-
-.services-header h2 {
-    font-size: 30px;
-    font-weight: bold;
+.services h2 {
+    font-size: 2.5rem;
     color: #5c2e8b;
-    margin-bottom: 5px;
-    /* Reduced margin bottom */
+    margin-bottom: 30px;
 }
 
-.explore-more {
-    font-size: 16px;
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.explore-more:hover {
-    color: #0056b3;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
-}
-
+/* .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            transition: transform 0.3s;
+        } */
 .service-card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-.service-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.service-card .card-body {
-    padding: 15px;
-}
-
-.service-card .card-title {
-    font-size: 20px;
-    color: #5c2e8b;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s;
 }
 
 .service-card:hover {
     transform: scale(1.05);
 }
 
-/* Testimonials Section */
-.testimonials {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-    /* Reduced padding */
-    text-align: center;
-    color: #333;
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
 }
 
-.testimonials h2 {
-    font-size: 32px;
+.service-card h5 {
     font-weight: bold;
-    color: #5c2e8b;
-    margin-bottom: 20px;
-    /* Reduced margin bottom */
+    margin-bottom: 10px;
 }
 
-.container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
+.service-card p {
+    font-size: 14px;
+    color: #666;
 }
 
-.testimonial-card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
+.service-card:hover {
     transform: scale(1.05);
 }
 
-.testimonial-card p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.testimonial-card strong {
-    font-size: 18px;
-    color: #5c2e8b;
-}
-
-/* Footer */
 .footer {
-    background-color: #333;
-    text-align: center;
+    background-color: #5c2e8b;
     color: white;
-    padding: 20px;
-}
-
-.footer p {
-    margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .navbar .menu ul {
-        gap: 15px;
-    }
-
-    .hero-section {
-        padding: 100px 20px;
-        /* Reduced padding for responsiveness */
-    }
-
-    .slide-text {
-        font-size: 3rem;
-    }
-
-    .services-header h2 {
-        font-size: 26px;
-        margin-bottom: 5px;
-    }
-}
-
-@media (max-width: 767px) {
-    .services-header {
-        padding: 0 10px;
-    }
-
-    .service-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .testimonial-card {
-        width: 100%;
-    }
-
-    .testimonials h2 {
-        font-size: 28px;
-        margin-bottom: 15px;
-        /* Reduced margin bottom */
-    }
-
-    .hero-section p {
-        font-size: 1.5rem;
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.h2section {
     text-align: center;
-    font-size: 30px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.venues-heading {
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 10px;
-    /* Reduced margin bottom */
+    color: #5c2e8b;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.explore-more {
+    font-size: 1rem;
+    color: #5c2e8b;
+    /* Match the theme color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.explore-more:hover {
+    color: #ff6fa7;
+    /* Change color on hover */
+    text-decoration: underline;
+    /* Underline on hover */
 }
