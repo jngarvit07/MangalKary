@@ -4,111 +4,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="navbar">
-        <div class="logo">
-            <a href="#"><img src="logo2.jpg" alt="WedMeGood Logo"></a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/150x40" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#testimonial">Testimonials</a></li>
-                <li><a href="#planner">About Us</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section">
-        <h1 class="slide-text">Welcome To Mangal Kary</h1>
-        <p>Plan your dream wedding with Mangal कार्य. We make your special day unforgettable!</p>
+    <div class="hero">
+        <h1>Welcome to Mangal Kary</h1>
     </div>
 
-
-    <div class="services-section">
-        <h2 class="h2section" id="services">Our Services</h2>
-        <div class="services-header">
-            <h2>Venues</h2>
-            <a href="#explore-more" class="explore-more">Explore More</a>
-        </div>
+    <!-- Our Services Section -->
+    <div class="services-section" id="services">
         <div class="container">
-            <!-- Service Card 1 -->
-            <div class="service-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2UFQ2usicG3EWGTMP8yDUv90cbq63DcvZsQ&s"
-                    class="card-img-top" alt="Wedding Planning">
-                <div class="card-body">
-                    <h5 class="card-title">Popular Venues in Mumbai</h5>
-                    <!-- <p class="card-text">From wedding theme to execution, we take care of every detail.</p> -->
+            <h2 style="margin-top: 38px;  font-weight: 700;" class="text-center mb-3.6">Our
+                Services</h2>
+
+            <!-- Venues -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4 class="venues-heading">Venues</h4>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="explore-more">Explore More</a>
                 </div>
             </div>
-            <!-- Service Card 1 -->
-            <div class="service-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWbuaJ0YMYv_gMgJBR7pJkxiDN1JZWJVbDiA&s"
-                    class="card-img-top" alt="Wedding Planning">
-                <div class="card-body">
-                    <h5 class="card-title">Popular Venues in Pune</h5>
-                    <!-- <p class="card-text">From wedding theme to execution, we take care of every detail.</p> -->
+            <div class="row">
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue1.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue2.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue3.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue4.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Service Card 1 -->
-            <div class="service-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0KTWv7SWlsFk3aBG5lNgXxxUd6vCG1iMBQ&s"
-                    class="card-img-top" alt="Wedding Planning">
-                <div class="card-body">
-                    <h5 class="card-title">Popular Venues in Jaipur</h5>
-                    <!-- <p class="card-text">From wedding theme to execution, we take care of every detail.</p> -->
+
+            <!-- Venues -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4 class="venues-heading">Venues</h4>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="explore-more">Explore More</a>
                 </div>
             </div>
-            <!-- Service Card 1 -->
-            <div class="service-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVQgozNYQY0dWnJdvZJEAJVVMJ_Avsi6LxA&s"
-                    class="card-img-top" alt="Wedding Planning">
-                <div class="card-body">
-                    <h5 class="card-title">Popular Venues in Udaipur</h5>
-                    <!-- <p class="card-text">From wedding theme to execution, we take care of every detail.</p> -->
+            <div class="row">
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue1.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue2.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue3.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-category="Venues">
+                    <div class="service-card">
+                        <img src="Images/venue4.jpg" alt="Venue 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Grand Palace</h5>
+                            <p>Capacity: 500 People</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotels  -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4 class="venues-heading">Hotels</h4>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="explore-more">Explore More</a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Hotels -->
+                <div class="col-md-3 mb-4" data-category="Hotels">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Hotel 3" class="img-fluid">
+                        <div class="p-3">
+                            <h5>City Center Hotel</h5>
+                            <p>Convenient Location</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food & Catering  -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4 class="venues-heading">Food & Catering</h4>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="explore-more">Explore More</a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Food & Catering -->
+                <div class="col-md-3 mb-4" data-category="Food & Catering">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Catering 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Gourmet Catering</h5>
+                            <p>Exquisite Dishes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DJ Services  -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4 class="venues-heading">DJ Services</h4>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="explore-more">Explore More</a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- DJ Services -->
+                <div class="col-md-3 mb-4" data-category="DJ Services">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/300x200" alt="DJ 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>DJ Beats</h5>
+                            <p>Top Hits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mandap -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4 class="venues-heading">Mandap</h4>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="explore-more">Explore More</a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Mandap Cards -->
+                <div class="col-md-3 mb-4" data-category="Mandap">
+                    <div class="service-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Mandap 1" class="img-fluid">
+                        <div class="p-3">
+                            <h5>Elegant Mandap</h5>
+                            <p>Luxury Designs</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Testimonials Section -->
-    <div class="testimonials">
-        <h2 id="testimonial">Testimonials</h2>
-        <div class="container2">
-            <!-- Testimonial Card 1 -->
-            <div class="testimonial-card">
-                <p>"ShaadiSquad made our wedding day truly magical. They were there every step of the way!"</p>
-                <strong>- Rani & Amit</strong>
-            </div>
-
-            <!-- Testimonial Card 2 -->
-            <div class="testimonial-card">
-                <p>"Their wedding planning expertise was invaluable. Everything was perfect!"</p>
-                <strong>- Priya & Raj</strong>
-            </div>
-
-            <!-- Testimonial Card 3 -->
-            <div class="testimonial-card">
-                <p>"From catering to photography, they exceeded our expectations in every way!"</p>
-                <strong>- Neha & Sandeep</strong>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2024 Mangal Kary. All Rights Reserved.</p>
-    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Mangal Kary. All Rights Reserved.</p>
+    </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
